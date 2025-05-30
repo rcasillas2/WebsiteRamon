@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>ODS - Detalles</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings_accessibility" />
 </head>
 <body>
   <header>
@@ -14,6 +15,19 @@
       <a href="contacto.html">Contacto</a>
       <a href="cv.html">CV</a>
     </nav>
+    <div class="accessibility-wrapper">
+        <button id="accessibilityToggle" aria-label="Opciones de accesibilidad"><span class="material-symbols-outlined"> settings_accessibility</span></button>
+        <div id="accessibilityPanel" class="hidden" aria-hidden="true">
+            <button onclick="adjustFontSize(1)">Aumentar fuente</button>
+            <button onclick="adjustFontSize(-1)">Disminuir fuente</button>
+            <button onclick="toggleDarkMode()">Modo oscuro</button>
+            <button onclick="toggleHighContrast()">Alto contraste</button>
+            <button onclick="toggleImages()">Quitar imágenes</button>
+            <button onclick="toggleLinkHighlight()">Resaltar enlaces</button>
+            <button onclick="toggleColorBlindMode()">Daltonismo</button>
+            <button onclick="resetAccessibility()">Restablecer</button>
+        </div>
+    </div>
   </header>
 
   <main>
@@ -103,5 +117,6 @@
       <img src="odsicons/S-WEB-Goal-17.png" alt="Logo ODS 17">
     </div>
   </main>
+  <script src="accessibility.js"></script>
 </body>
 </html>
