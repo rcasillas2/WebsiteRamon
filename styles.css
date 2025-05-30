@@ -51,14 +51,25 @@ button:hover {
 
 .ods-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .ods-item img {
-  max-width: 100px;
-  margin-left: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+.ods-item.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 700px) {
+  .ods-item, .ods-item.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
 }
 
 form {
