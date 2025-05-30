@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
       'highlight-links',
       'colorblind-mode'
     );
-    body.style.fontSize = ''; // Restablecer tamaño de fuente
+    body.style.fontSize = '';
   };
 });
