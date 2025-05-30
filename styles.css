@@ -49,6 +49,14 @@ button:hover {
   background-color: #005fa3;
 }
 
+.gif-container {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
 .ods-item {
   display: flex;
   align-items: center;
